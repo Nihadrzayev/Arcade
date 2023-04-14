@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    background-image: url("../img/header\ img.webp");
+    padding: 20px 100px;
+}
+
+header .header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo span {
+    color: white;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.header .menu {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu p {
+    font-size: 16px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.menu p:hover {
+    color: rgb(117, 81, 150);
+    transition: all .3 ease-in;
+}
+
+.menu i {
+    color: white;
+    font-size: 25px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!! HEADER!!!!!!!!!!!!!!!!!*/
+.sctn1 {
+    width: 100%;
+    height: 90vh;
+    padding-left: 100px;
+    background-image:url(../img/background.png);
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.sctn1 img {
+    width: 520px;
+    height: 660px;
+    position: absolute;
+    right: 180px;
+    top: 95px;
+    border-radius: 35px;
+}
+
+.sctn1 .box1 {
+    width: 620px;
+    height: 400px;
+    background-color: #8455E6;
+    border-radius: 28px;
+    padding: 40px 70px;
+}
+
+.box1 h1 {
+    color: white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.box1 .p1 {
+    font-size: 70px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.box1 .p2 {
+    line-height: 3;
+    color: white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box1 button {
+    background-color: white;
+    color: #8455E6;
+    border:solid 2px white;
+    border-radius: 40px;
+    padding: 14px 36px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+.box1 button:hover{
+    background-color: #8455E6;
+    color: white;
+    transition: all .3s ease-in;
+}
+
+/* !!!!!!!!!!!!!!!!! SECTION 1 END!!!!!!!!!!!!!!!!!!!!!! */
+.sctn2 {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding: 70px 120px;
+}
+
+.sctn2 nav {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sctn2 .S1 {
+    color: white;
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.sctn2 .B1 {
+    padding: 10px 35px;
+    border-radius: 45px;
+    border: white 2px;
+    color: #8455E6;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.sctn2 .B1:hover {
+    background-color: #8455E6;
+    color: white;
+    transition: all .5s ease-in;
+}
+
+.sctn2 .item {
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+
+.item .box {
+    width: 25%;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.box .img{
+    width:300px;
+    height:300px;
+    overflow: hidden;
+}
+.box img {
+    width: 298px;
+    height: 298px;
+}
+.box img:hover{
+    transition: all 0.7 ease-in;
+    transform: scale(1.2);
+
+}
+
+.box p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.box span {
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.box button {
+    padding: 10px 35px;
+    border-radius: 45px;
+    border: white 2px;
+    background-color: #8455E6;
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top:25px;
+    cursor:pointer;
+}
+.item .box2 {
+    width: 25%;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.box2 .img{
+    width:300px;
+    height:300px;
+    overflow: hidden;
+}
+.box2 img {
+    width: 298px;
+    height: 298px;
+}
+.box2 img:hover{
+    transition: all 0.7 ease-in;
+    transform: scale(1.2);
+}
+.box2 p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.box2 span {
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.box2 button {
+    padding: 10px 35px;
+    border-radius: 45px;
+    border: white 2px;
+    background-color: #8455E6;
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top:25px;
+    cursor:pointer;
+}
+.item .box3 {
+    width: 25%;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.box3 .img{
+    width:300px;
+    height:300px;
+    overflow: hidden;
+}
+
+.box3 img {
+    width: 298px;
+    height: 298px;
+}
+.box3 img:hover{
+    transition: all 0.7 ease-in;
+    transform: scale(1.2);
+}
+
+.box3 p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.box3 span {
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.box3 button {
+    padding: 10px 35px;
+    border-radius: 45px;
+    border: white 2px;
+    background-color: #8455E6;
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top:25px;
+}
+
+.item .box4 {
+    width: 25%;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.box4 img {
+    width: 298px;
+    height: 298px;
+}
+.box4 img:hover{
+    transition: all 0.7 ease-in;
+    transform: scale(1.2);
+}
+.box4 .img{
+    width:300px;
+    height:300px;
+    overflow: hidden;
+}
+
+.box4 p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.box4 span {
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.box4 button {
+    padding: 10px 35px;
+    border-radius: 45px;
+    border: white 2px;
+    background-color: #8455E6;
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top:25px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!SECTION 2 END!!!!!!!!!!!!! */
