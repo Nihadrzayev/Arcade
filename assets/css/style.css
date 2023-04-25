@@ -6,7 +6,7 @@
 
 header {
     width: 100%;
-    height: 20vh;
+    height: 17vh;
     background-image: url("../img/header\ img.webp");
     padding: 20px 100px;
 }
@@ -25,6 +25,11 @@ header .header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header .logo img {
+    width: 68px;
+    height: 60px;
 }
 
 .header .logo span {
@@ -50,7 +55,7 @@ header .header {
 }
 
 .menu p:hover {
-    color: rgb(117, 81, 150);
+    color: rgb(119, 85, 150);
     transition: all .3 ease-in;
 }
 
@@ -66,14 +71,33 @@ header .header {
     width: 100%;
     height: 90vh;
     padding-left: 100px;
-    background-image:url(../img/background.png);
-    background-position:center;
+    background-image: url(../img/background.png);
+    background-position: center;
     background-size: cover;
-    display: flex;
-    align-items: center;
     background-attachment: fixed;
     position: relative;
 }
+
+.sctn1 .btn2{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom:40px;
+    right:30px;
+    background-color: rgb(136, 88, 237);
+    border:none;
+    position: fixed;
+    cursor: pointer;
+    box-shadow: 0 0 3px 0 hsla(0,1.4%,71%,.5);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding:20px;
+    border-radius:50%;
+    z-index:10;
+}
+
+
 
 .sctn1 img {
     width: 520px;
@@ -90,6 +114,9 @@ header .header {
     background-color: #8455E6;
     border-radius: 28px;
     padding: 40px 70px;
+    position: absolute;
+    top:99px;
+    left:120px;
 }
 
 .box1 h1 {
@@ -118,7 +145,7 @@ header .header {
 .box1 button {
     background-color: white;
     color: #8455E6;
-    border:solid 2px white;
+    border: solid 2px white;
     border-radius: 40px;
     padding: 14px 36px;
     font-size: 15px;
@@ -126,7 +153,8 @@ header .header {
     font-weight: 700;
     cursor: pointer;
 }
-.box1 button:hover{
+
+.box1 button:hover {
     background-color: #8455E6;
     color: white;
     transition: all .3s ease-in;
@@ -183,18 +211,22 @@ header .header {
     padding: 5px;
     text-align: center;
 }
-.box .img{
-    width:300px;
-    height:300px;
+
+.box .img {
+    width: 300px;
+    height: 300px;
     overflow: hidden;
 }
+
 .box img {
     width: 298px;
     height: 298px;
+    transition: all 0.2s ease-in;
 }
-.box img:hover{
-    transition: all 0.7 ease-in;
-    transform: scale(1.2);
+
+.box img:hover {
+    transition: all 0.4 ease-in;
+    transform: scale(1.3);
 
 }
 
@@ -222,149 +254,402 @@ header .header {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    margin-top:25px;
-    cursor:pointer;
-}
-.item .box2 {
-    width: 25%;
-    height: 100%;
-    padding: 5px;
-    text-align: center;
-}
-.box2 .img{
-    width:300px;
-    height:300px;
-    overflow: hidden;
-}
-.box2 img {
-    width: 298px;
-    height: 298px;
-}
-.box2 img:hover{
-    transition: all 0.7 ease-in;
-    transform: scale(1.2);
-}
-.box2 p {
-    color: white;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    line-height: 1.7;
+    margin-top: 25px;
+    cursor: pointer
 }
 
-.box2 span {
-    color: white;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-
-}
-
-.box2 button {
-    padding: 10px 35px;
-    border-radius: 45px;
-    border: white 2px;
-    background-color: #8455E6;
-    color: white;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin-top:25px;
-    cursor:pointer;
-}
-.item .box3 {
-    width: 25%;
-    height: 100%;
-    padding: 5px;
-    text-align: center;
-}
-
-.box3 .img{
-    width:300px;
-    height:300px;
-    overflow: hidden;
-}
-
-.box3 img {
-    width: 298px;
-    height: 298px;
-}
-.box3 img:hover{
-    transition: all 0.7 ease-in;
-    transform: scale(1.2);
-}
-
-.box3 p {
-    color: white;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    line-height: 1.7;
-}
-
-.box3 span {
-    color: white;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-
-}
-
-.box3 button {
-    padding: 10px 35px;
-    border-radius: 45px;
-    border: white 2px;
-    background-color: #8455E6;
-    color: white;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin-top:25px;
-}
-
-.item .box4 {
-    width: 25%;
-    height: 100%;
-    padding: 5px;
-    text-align: center;
-}
-
-.box4 img {
-    width: 298px;
-    height: 298px;
-}
-.box4 img:hover{
-    transition: all 0.7 ease-in;
-    transform: scale(1.2);
-}
-.box4 .img{
-    width:300px;
-    height:300px;
-    overflow: hidden;
-}
-
-.box4 p {
-    color: white;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    line-height: 1.7;
-}
-
-.box4 span {
-    color: white;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-
-}
-
-.box4 button {
-    padding: 10px 35px;
-    border-radius: 45px;
-    border: white 2px;
-    background-color: #8455E6;
-    color: white;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin-top:25px;
-}
 /* !!!!!!!!!!!!!!!!!!!!!!!SECTION 2 END!!!!!!!!!!!!! */
+
+.sctn3 {
+    width: 100%;
+    height: 110vh;
+    padding: 70px 120px;
+    background-color: #232223;
+}
+
+.sctn3 .head {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.sctn3 span {
+    color: white;
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.sctn3 .category {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.category .item {
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.category .item .img {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.category .item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.category .item img:hover {
+    transition: all 1s ease-in;
+    transform: scale(1.2);
+
+}
+
+.category p {
+    color: white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    line-height: 1.9;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SECTION 3 END!!!!!!!!!!!!!! */
+.sctn4 {
+    width: 100%;
+    height: 110vh;
+    background-color: black;
+    position: relative;
+}
+
+.sctn4 .Kira {
+    width: 388px;
+    height: 523px;
+    border-radius: 30px;
+    position: absolute;
+    left: 370px;
+    z-index: 2;
+    top: 90px;
+}
+
+.sctn4 .Dead {
+    width: 388px;
+    height: 523px;
+    border-radius: 10px;
+    position: absolute;
+    right: 380px;
+    bottom: 45px;
+}
+
+.sctn4 .Chronosplit {
+    width: 388px;
+    height: 523px;
+    border-radius: 10px;
+    position: absolute;
+    right: 98px;
+    top: 170px;
+}
+
+.sctn4 .box {
+    width: 580px;
+    height: 360px;
+    background-color: #8455E6;
+    z-index: 6;
+    border-radius: 30px;
+    position: absolute;
+    left: 287px;
+    top: 140px;
+    text-align: center;
+    padding: 40px 40px;
+}
+
+.sctn4 .box span {
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.sctn4 .box .p1 {
+    font-size: 140px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 0.80;
+}
+
+.sctn4 .box .p2 {
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.sctn4 .box button {
+    padding: 10px 30px;
+    border-radius: 45px;
+    border: white solid 2px;
+    color: #8455E6;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.sctn4 .box button:hover {
+    background-color: #8455E6;
+    color: white;
+    border: solid 2px white;
+    transition: all .2s ease-in;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!! SECTION 4 END!!!!!!!!!!!!!!!!!!! */
+.sctn5 {
+    width: 100%;
+    height: 70vh;
+    background-image: url('../img/background2.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.sctn5 .text {
+    width: 60%;
+    height: 45%;
+    text-align: center;
+    position: relative;
+
+}
+
+.sctn5 .text span {
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text p {
+    font-size: 22px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
+}
+
+.text button {
+    padding: 10px 30px;
+    border-radius: 45px;
+    border: #8455E6 solid 2px;
+    color: #ffffff;
+    background-color: #8455E6;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    bottom: 20px;
+    right: 40%;
+}
+
+.text button:hover {
+    background-color: #ffffff;
+    color: #8455E6;
+    border: solid 2px #8455E6;
+    transition: all .2s ease-in;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!! SECTION 5 END!!!!!!!!!!!!!! */
+
+.sctn6 {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../img/background3.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sctn6 .text1 {
+    width: 40%;
+    height: 80%;
+    text-align: center;
+    position: relative;
+}
+
+.sctn6 .text1 .span {
+    font-size: 42px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.9;
+}
+
+.sctn6 .text1 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.text1 form {
+    margin-top: 90px;
+    width: 100%;
+    height: 20%;
+    border-radius: 17px;
+    border: 3px white solid;
+}
+
+.text1 h5 {
+    position: absolute;
+    color: #ffffff;
+    bottom: 53%;
+    left: 47%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+form {
+    overflow: hidden;
+}
+
+form input {
+    width: 100%;
+    height: 50%;
+    background: none;
+    border: none;
+}
+
+
+.form-btn {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50%;
+    border: none;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+
+.sctn7 {
+    width: 100%;
+    height: 40vh;
+    background-color: #8455E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sctn7 img {
+    width: 60%;
+    height: 99%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 75px;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+footer {
+
+    width: 100%;
+    height: 95vh;
+    background-color: #000000;
+    position: relative;
+    padding: 120px 100px;
+}
+
+footer .text {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.first {
+    width: 20%;
+    height: 100%;
+}
+
+.first img {
+    width: 110px;
+    height: 120px;
+}
+
+
+footer h3 {
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0px 0px 36px;
+}
+
+footer ul li {
+    list-style-type: none;
+    color: #D9D9D9;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 10px 0px;
+    cursor: pointer;
+    line-height: 2.6;
+}
+
+footer .horizontal {
+    width: 86%;
+    height: 1px;
+    color: #ffffff;
+    border: 0.1px solid;
+    position: absolute;
+    bottom: 170px;
+    right: 103px;
+}
+
+footer .bottom {
+    width: 85%;
+    height: 10%;
+    padding: 10px 70px;
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.bottom .payment .img img {
+    width: 44px;
+    height: 28px;
+    margin-top: 20px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+
+.bottom .icon i {
+    color: white;
+    margin-top: 20px;
+    margin-right: 40px;
+    font-size:19px;
+}
