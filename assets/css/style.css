@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -32,11 +33,13 @@ header .logo img {
     height: 60px;
 }
 
-.header .logo span {
+.header .logo a {
     color: white;
-    font-size: 22px;
+    font-size: 32px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    cursor: pointer;
+    text-decoration:none;
 }
 
 .header .menu {
@@ -47,11 +50,12 @@ header .logo img {
     align-items: center;
 }
 
-.menu p {
+.menu a {
     font-size: 16px;
     color: white;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .menu p:hover {
@@ -94,21 +98,23 @@ header .logo img {
     padding: 20px;
     border-radius: 50%;
     z-index: 10;
-    animation:myAnimation;
-    animation-duration:3s;
+    animation:   myAnimation;
+    animation-duration:  3s;
     animation-iteration-count: infinite;
 
 }
 
 @keyframes myAnimation {
     0% {
-        transform:scale(0.8);
+        transform: scale(0.8);
     }
-    50%{
+
+    50% {
         transform: scale(1);
     }
-    60%{
-        transform:scale(0.8);
+
+    60% {
+        transform: scale(0.8);
     }
 }
 
@@ -122,6 +128,8 @@ header .logo img {
     top: 95px;
     border-radius: 35px;
 }
+
+
 
 .sctn1 .box1 {
     width: 620px;
@@ -274,8 +282,8 @@ header .logo img {
     transition: all .3s ease;
 }
 
-.box button:hover{
-  background-color: #2b1953;
+.box button:hover {
+    background-color: #2b1953;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!SECTION 2 END!!!!!!!!!!!!! */
@@ -358,8 +366,13 @@ header .logo img {
     left: 370px;
     z-index: 2;
     top: 90px;
+    animation: Kira 2s infinite linear;
 }
-
+@keyframes Kira{
+    50%{
+      top:130px;
+    }
+}
 
 .sctn4 .Dead {
     width: 388px;
@@ -368,6 +381,12 @@ header .logo img {
     position: absolute;
     right: 380px;
     bottom: 45px;
+    animation: Dead 2s infinite linear;
+}
+@keyframes Dead{
+    50%{
+        transform: translateX(30px);
+    }
 }
 
 .sctn4 .Chronosplit {
@@ -377,7 +396,14 @@ header .logo img {
     position: absolute;
     right: 98px;
     top: 170px;
+    animation: Chrono 2s infinite linear; 
 }
+@keyframes Chrono{
+    50%{
+        transform:translateX(-50px)
+    }
+}
+
 
 .sctn4 .box {
     width: 580px;
@@ -582,22 +608,23 @@ form input {
     object-fit: cover;
     position: absolute;
     bottom: 75px;
-    left:0;
+    left: 0;
     text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    animation:animation1;
-    animation-duration:3s;
+    animation: animation1;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
-@keyframes animation1{
-    20%{
-        transform:translateX(0%);
+@keyframes animation1 {
+    20% {
+        transform: translateX(0%);
     }
 
-    40%{
-        transform:translateX(20%);
+    40% {
+        transform: translateX(20%);
     }
-    60%{
+
+    60% {
         transform: translateX(40%);
     }
 }
